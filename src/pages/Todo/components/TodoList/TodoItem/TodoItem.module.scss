@@ -1,0 +1,62 @@
+.todoItem {
+  margin: 0 auto 30px;
+  background: #f1f1f1;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .todoTitle {
+    margin: 0;
+    word-break: break-word;
+  }
+
+  .todoDescription {
+    margin: 0;
+    padding-top: 15px;
+    word-break: break-word;
+  }
+
+  .actionBtns {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    .doneTodoCheckbox {
+      margin-right: 20px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .actionIcon {
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .editTodoBtn {
+      @extend .actionIcon;
+      margin-right: 20px;
+      color: #54bbbb;
+    }
+
+    .notAllowed {
+      cursor: not-allowed;
+    }
+
+    .deleteTodoIcon {
+      @extend .actionIcon;
+      color: #ad0f0f;
+    }
+  }
+
+  .crossedOut {
+    text-decoration: line-through;
+  }
+}
+
+.closedTodo {
+  opacity: .5;
+}

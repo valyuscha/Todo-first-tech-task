@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  transition: opacity .3s;
+}
+
+.primary {
+  @extend .button;
+  background: #54bbbb;
+}
+
+.danger {
+  @extend .button;
+  background: #ad0f0f;
+  color: #ffffff;
+}

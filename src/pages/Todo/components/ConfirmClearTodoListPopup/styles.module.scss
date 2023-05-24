@@ -1,0 +1,19 @@
+.popup {
+  background: #ffffff;
+  padding: 30px 50px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+
+  .message {
+    margin: 0;
+    font-size: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .confirmBtns {
+    display: flex;
+    justify-content: space-between;
+  }
+}

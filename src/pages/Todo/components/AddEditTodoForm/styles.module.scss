@@ -1,0 +1,51 @@
+.addEditTodoForm {
+  margin: 0 auto 30px;
+
+  .formItem {
+    margin-bottom: 20px;
+
+    .invalidInput {
+      border-color: #ff0000;
+    }
+
+    .required::after {
+      content: "*";
+      color: #ff0000;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #524e4e;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .formItemInput {
+      width: 100%;
+      outline: none;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .errorMessage {
+      color: #ff0000;
+      font-size: 12px;
+      margin: 0;
+      padding-top: 5px;
+    }
+
+    .show {
+      opacity: 1;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+  }
+}
